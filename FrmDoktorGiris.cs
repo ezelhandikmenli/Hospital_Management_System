@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Hospital_Management_System
 {
-    public partial class FrmGirisler : Form
+    public partial class FrmDoktorGiris : Form
     {
-        public FrmGirisler()
+        public FrmDoktorGiris()
         {
             InitializeComponent();
         }

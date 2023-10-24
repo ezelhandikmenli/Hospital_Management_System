@@ -1,6 +1,6 @@
 ﻿namespace Hospital_Management_System
 {
-    partial class Form1
+    partial class FrmGirisler
     {
         /// <summary>
         /// Required designer variable.
