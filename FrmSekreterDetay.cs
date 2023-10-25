@@ -16,5 +16,15 @@ namespace Hospital_Management_System
         {
             InitializeComponent();
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblTc_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

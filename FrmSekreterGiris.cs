@@ -16,5 +16,10 @@ namespace Hospital_Management_System
         {
             InitializeComponent();
         }
+
+        private void FrmSekreterGiris_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
