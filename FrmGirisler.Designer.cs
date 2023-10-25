@@ -33,9 +33,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnDoktorGiris = new System.Windows.Forms.Button();
+            this.btnHastaGiris = new System.Windows.Forms.Button();
+            this.btnSekreterGiris = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -77,7 +77,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe Print", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label4.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label4.Location = new System.Drawing.Point(73, 50);
+            this.label4.Location = new System.Drawing.Point(133, 46);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(230, 50);
@@ -94,37 +94,37 @@
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 
-            // button3
+            // btnDoktorGiris
             // 
-            this.button3.Image = global::Hospital_Management_System.Properties.Resources.doctor__1_;
-            this.button3.Location = new System.Drawing.Point(332, 181);
-            this.button3.Margin = new System.Windows.Forms.Padding(4);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(176, 190);
-            this.button3.TabIndex = 2;
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnDoktorGiris.Image = global::Hospital_Management_System.Properties.Resources.doctor__1_;
+            this.btnDoktorGiris.Location = new System.Drawing.Point(332, 181);
+            this.btnDoktorGiris.Margin = new System.Windows.Forms.Padding(4);
+            this.btnDoktorGiris.Name = "btnDoktorGiris";
+            this.btnDoktorGiris.Size = new System.Drawing.Size(176, 190);
+            this.btnDoktorGiris.TabIndex = 2;
+            this.btnDoktorGiris.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnHastaGiris
             // 
-            this.button2.Image = global::Hospital_Management_System.Properties.Resources.patient;
-            this.button2.Location = new System.Drawing.Point(53, 181);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(196, 190);
-            this.button2.TabIndex = 1;
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnHastaGiris.Image = global::Hospital_Management_System.Properties.Resources.patient;
+            this.btnHastaGiris.Location = new System.Drawing.Point(53, 181);
+            this.btnHastaGiris.Margin = new System.Windows.Forms.Padding(4);
+            this.btnHastaGiris.Name = "btnHastaGiris";
+            this.btnHastaGiris.Size = new System.Drawing.Size(196, 190);
+            this.btnHastaGiris.TabIndex = 1;
+            this.btnHastaGiris.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnSekreterGiris
             // 
-            this.button1.Image = global::Hospital_Management_System.Properties.Resources.secretary;
-            this.button1.Location = new System.Drawing.Point(580, 181);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(196, 190);
-            this.button1.TabIndex = 0;
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnSekreterGiris.Image = global::Hospital_Management_System.Properties.Resources.secretary;
+            this.btnSekreterGiris.Location = new System.Drawing.Point(580, 181);
+            this.btnSekreterGiris.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSekreterGiris.Name = "btnSekreterGiris";
+            this.btnSekreterGiris.Size = new System.Drawing.Size(196, 190);
+            this.btnSekreterGiris.TabIndex = 0;
+            this.btnSekreterGiris.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // FrmGirisler
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -135,12 +135,12 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnDoktorGiris);
+            this.Controls.Add(this.btnHastaGiris);
+            this.Controls.Add(this.btnSekreterGiris);
             this.Font = new System.Drawing.Font("Corbel", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "Form1";
+            this.Name = "FrmGirisler";
             this.Text = "Fo";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -150,9 +150,9 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnSekreterGiris;
+        private System.Windows.Forms.Button btnHastaGiris;
+        private System.Windows.Forms.Button btnDoktorGiris;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
