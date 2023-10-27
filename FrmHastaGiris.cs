@@ -26,5 +26,11 @@ namespace Hospital_Management_System
         {
 
         }
+
+        private void linkUye_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            FrmHastaKayit fr = new FrmHastaKayit();
+            fr.Show();
+        }
     }
 }

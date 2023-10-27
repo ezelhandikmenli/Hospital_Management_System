@@ -103,6 +103,7 @@
             this.btnDoktorGiris.Size = new System.Drawing.Size(176, 190);
             this.btnDoktorGiris.TabIndex = 2;
             this.btnDoktorGiris.UseVisualStyleBackColor = true;
+            this.btnDoktorGiris.Click += new System.EventHandler(this.btnDoktorGiris_Click);
             // 
             // btnHastaGiris
             // 
@@ -113,9 +114,11 @@
             this.btnHastaGiris.Size = new System.Drawing.Size(196, 190);
             this.btnHastaGiris.TabIndex = 1;
             this.btnHastaGiris.UseVisualStyleBackColor = true;
+            this.btnHastaGiris.Click += new System.EventHandler(this.btnHastaGiris_Click);
             // 
             // btnSekreterGiris
             // 
+            this.btnSekreterGiris.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnSekreterGiris.Image = global::Hospital_Management_System.Properties.Resources.secretary;
             this.btnSekreterGiris.Location = new System.Drawing.Point(580, 181);
             this.btnSekreterGiris.Margin = new System.Windows.Forms.Padding(4);
@@ -123,6 +126,7 @@
             this.btnSekreterGiris.Size = new System.Drawing.Size(196, 190);
             this.btnSekreterGiris.TabIndex = 0;
             this.btnSekreterGiris.UseVisualStyleBackColor = true;
+            this.btnSekreterGiris.Click += new System.EventHandler(this.btnSekreterGiris_Click);
             // 
             // FrmGirisler
             // 
@@ -141,7 +145,7 @@
             this.Font = new System.Drawing.Font("Corbel", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmGirisler";
-            this.Text = "Fo";
+            this.Text = "Ezmir Hospital Giriş";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
