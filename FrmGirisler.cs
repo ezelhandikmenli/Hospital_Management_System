@@ -20,6 +20,7 @@ namespace Hospital_Management_System
         private void btnHastaGiris_Click(object sender, EventArgs e)
         {
             FrmHastaGiris fr = new FrmHastaGiris();
+            
             fr.Show();
             this.Hide();
         }

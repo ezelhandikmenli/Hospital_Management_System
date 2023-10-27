@@ -44,7 +44,7 @@
             this.label1.Location = new System.Drawing.Point(116, 30);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(358, 57);
+            this.label1.Size = new System.Drawing.Size(345, 55);
             this.label1.TabIndex = 0;
             this.label1.Text = "Hasta Giriş Paneli";
             // 
@@ -85,6 +85,7 @@
             this.txtBoxSifre.Name = "txtBoxSifre";
             this.txtBoxSifre.Size = new System.Drawing.Size(220, 36);
             this.txtBoxSifre.TabIndex = 4;
+            this.txtBoxSifre.UseSystemPasswordChar = true;
             this.txtBoxSifre.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // linkUye
@@ -129,6 +130,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "FrmHastaGiris";
             this.Text = "Hasta Girişi";
+            this.Load += new System.EventHandler(this.FrmHastaGiris_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -190,6 +190,7 @@
             this.txtBoxAd.Name = "txtBoxAd";
             this.txtBoxAd.Size = new System.Drawing.Size(158, 36);
             this.txtBoxAd.TabIndex = 1;
+            this.txtBoxAd.TextChanged += new System.EventHandler(this.txtBoxAd_TextChanged);
             // 
             // label11
             // 

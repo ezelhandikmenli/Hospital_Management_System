@@ -37,5 +37,10 @@ namespace Hospital_Management_System
             bgl.baglanti().Close();
             MessageBox.Show("Kaydınız Gerçekleşmiştir Şifreniz:" + txtBoxSifre.Text, "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void txtBoxAd_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
