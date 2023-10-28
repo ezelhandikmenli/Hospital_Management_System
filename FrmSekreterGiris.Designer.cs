@@ -44,6 +44,7 @@
             this.btnGiris.TabIndex = 13;
             this.btnGiris.Text = "Giriş Yap";
             this.btnGiris.UseVisualStyleBackColor = true;
+            this.btnGiris.Click += new System.EventHandler(this.btnGiris_Click);
             // 
             // txtBoxSifre
             // 
@@ -51,6 +52,7 @@
             this.txtBoxSifre.Name = "txtBoxSifre";
             this.txtBoxSifre.Size = new System.Drawing.Size(148, 36);
             this.txtBoxSifre.TabIndex = 11;
+            this.txtBoxSifre.TextChanged += new System.EventHandler(this.txtBoxSifre_TextChanged);
             // 
             // maskedTc
             // 
@@ -93,6 +95,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(496, 356);
             this.Controls.Add(this.btnGiris);
@@ -103,8 +106,9 @@
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Corbel", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.MaximizeBox = false;
             this.Name = "FrmSekreterGiris";
-            this.Text = "FrmSekreterGiris";
+            this.Text = "Sekreter Girisi";
             this.Load += new System.EventHandler(this.FrmSekreterGiris_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
