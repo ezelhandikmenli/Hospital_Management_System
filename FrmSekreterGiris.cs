@@ -33,6 +33,7 @@ namespace Hospital_Management_System
             if (dr.Read())
             {
                 FrmSekreterDetay frs = new FrmSekreterDetay();
+                frs.TCnumara = maskedTc.Text;
                 frs.Show();
                 this.Hide();
             }

@@ -52,6 +52,7 @@
             this.txtBoxSifre.Name = "txtBoxSifre";
             this.txtBoxSifre.Size = new System.Drawing.Size(148, 36);
             this.txtBoxSifre.TabIndex = 11;
+            this.txtBoxSifre.Text = "5555";
             this.txtBoxSifre.TextChanged += new System.EventHandler(this.txtBoxSifre_TextChanged);
             // 
             // maskedTc
@@ -61,6 +62,7 @@
             this.maskedTc.Name = "maskedTc";
             this.maskedTc.Size = new System.Drawing.Size(148, 36);
             this.maskedTc.TabIndex = 10;
+            this.maskedTc.Text = "55555555555";
             this.maskedTc.ValidatingType = typeof(int);
             // 
             // label3
@@ -93,6 +95,7 @@
             // 
             // FrmSekreterGiris
             // 
+            this.AcceptButton = this.btnGiris;
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
