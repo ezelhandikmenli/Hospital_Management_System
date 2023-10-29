@@ -34,6 +34,8 @@
             this.lblAdSoyad = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.textBoxid = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.lnkBilgiDuzenle = new System.Windows.Forms.LinkLabel();
             this.btnRandevuAl = new System.Windows.Forms.Button();
             this.rchSikayet = new System.Windows.Forms.RichTextBox();
@@ -46,8 +48,6 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBoxid = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -124,6 +124,23 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Randevu Paneli";
             this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
+            // 
+            // textBoxid
+            // 
+            this.textBoxid.Location = new System.Drawing.Point(144, 41);
+            this.textBoxid.Name = "textBoxid";
+            this.textBoxid.Size = new System.Drawing.Size(186, 36);
+            this.textBoxid.TabIndex = 8;
+            this.textBoxid.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(88, 44);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(35, 28);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "id:";
             // 
             // lnkBilgiDuzenle
             // 
@@ -240,23 +257,8 @@
             this.dataGridView2.RowTemplate.Height = 24;
             this.dataGridView2.Size = new System.Drawing.Size(666, 244);
             this.dataGridView2.TabIndex = 1;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(88, 44);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 28);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "id:";
-            // 
-            // textBoxid
-            // 
-            this.textBoxid.Location = new System.Drawing.Point(144, 41);
-            this.textBoxid.Name = "textBoxid";
-            this.textBoxid.Size = new System.Drawing.Size(186, 36);
-            this.textBoxid.TabIndex = 8;
-            this.textBoxid.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
+            this.dataGridView2.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellDoubleClick);
             // 
             // FrmHastaDetay
             // 

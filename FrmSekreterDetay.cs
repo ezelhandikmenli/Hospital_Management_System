@@ -114,5 +114,17 @@ namespace Hospital_Management_System
             FrmBrans frb = new FrmBrans();
             frb.Show();
         }
+
+        private void btnHastaPaneli_Click(object sender, EventArgs e)
+        {
+            FrmRandevuListesi frl = new FrmRandevuListesi();
+            frl.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FrmDuyurular fr = new FrmDuyurular();
+            fr.Show();
+        }
     }
 }

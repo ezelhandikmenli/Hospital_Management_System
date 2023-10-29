@@ -26,7 +26,13 @@ namespace Hospital_Management_System
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            SqlCommand komut = new SqlCommand("Update Tbl_Randevular Set RandevuDurum=1,HastaTC=@p1,HastaSikayet=@p2 where Randevuid=@p3",bgl.baglanti());
+            komut.Parameters.AddWithValue("@p1",lblTc.Text);
+            komut.Parameters.AddWithValue("@p2", rchSikayet.Text);
+            komut.Parameters.AddWithValue("@p3", textBoxid.Text);
+            komut.ExecuteNonQuery();
+            bgl.baglanti().Close();
+            MessageBox.Show("Randevu Alındı","Uyarı",MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
         private void FrmHastaDetay_Load(object sender, EventArgs e)
@@ -87,6 +93,17 @@ namespace Hospital_Management_System
             FrmBilgiDuzenle fr = new FrmBilgiDuzenle();
             fr.TCno = lblTc.Text;
             fr.Show();
+        }
+
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dataGridView2_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int secilen = dataGridView2.SelectedCells[0].RowIndex;
+            textBoxid.Text = dataGridView2.Rows[secilen].Cells[0].Value.ToString();
         }
     }
 }
