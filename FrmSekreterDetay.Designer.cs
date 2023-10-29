@@ -37,6 +37,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.txtBoxDoktor = new System.Windows.Forms.ComboBox();
             this.btnGuncelle = new System.Windows.Forms.Button();
             this.btnKaydet = new System.Windows.Forms.Button();
             this.checkBoxDurum = new System.Windows.Forms.CheckBox();
@@ -44,7 +45,6 @@
             this.cmbBrans = new System.Windows.Forms.ComboBox();
             this.mskTarih = new System.Windows.Forms.MaskedTextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.txtBoxDoktor = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -141,6 +141,7 @@
             this.button2.TabIndex = 3;
             this.button2.Text = "Oluştur";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // richTextBox1
             // 
@@ -152,6 +153,7 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.txtBoxDoktor);
             this.groupBox3.Controls.Add(this.btnGuncelle);
             this.groupBox3.Controls.Add(this.btnKaydet);
             this.groupBox3.Controls.Add(this.checkBoxDurum);
@@ -159,7 +161,6 @@
             this.groupBox3.Controls.Add(this.cmbBrans);
             this.groupBox3.Controls.Add(this.mskTarih);
             this.groupBox3.Controls.Add(this.label7);
-            this.groupBox3.Controls.Add(this.txtBoxDoktor);
             this.groupBox3.Controls.Add(this.label8);
             this.groupBox3.Controls.Add(this.label9);
             this.groupBox3.Controls.Add(this.label10);
@@ -173,6 +174,14 @@
             this.groupBox3.TabIndex = 3;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Randevu Paneli";
+            // 
+            // txtBoxDoktor
+            // 
+            this.txtBoxDoktor.FormattingEnabled = true;
+            this.txtBoxDoktor.Location = new System.Drawing.Point(167, 265);
+            this.txtBoxDoktor.Name = "txtBoxDoktor";
+            this.txtBoxDoktor.Size = new System.Drawing.Size(158, 36);
+            this.txtBoxDoktor.TabIndex = 59;
             // 
             // btnGuncelle
             // 
@@ -191,6 +200,7 @@
             this.btnKaydet.TabIndex = 57;
             this.btnKaydet.Text = "Kaydet";
             this.btnKaydet.UseVisualStyleBackColor = true;
+            this.btnKaydet.Click += new System.EventHandler(this.btnKaydet_Click);
             // 
             // checkBoxDurum
             // 
@@ -221,6 +231,7 @@
             this.cmbBrans.Name = "cmbBrans";
             this.cmbBrans.Size = new System.Drawing.Size(158, 36);
             this.cmbBrans.TabIndex = 54;
+            this.cmbBrans.SelectedIndexChanged += new System.EventHandler(this.cmbBrans_SelectedIndexChanged);
             // 
             // mskTarih
             // 
@@ -239,13 +250,6 @@
             this.label7.Size = new System.Drawing.Size(44, 28);
             this.label7.TabIndex = 51;
             this.label7.Text = "TC:";
-            // 
-            // txtBoxDoktor
-            // 
-            this.txtBoxDoktor.Location = new System.Drawing.Point(167, 265);
-            this.txtBoxDoktor.Name = "txtBoxDoktor";
-            this.txtBoxDoktor.Size = new System.Drawing.Size(158, 36);
-            this.txtBoxDoktor.TabIndex = 50;
             // 
             // label8
             // 
@@ -391,6 +395,7 @@
             this.btnBransPaneli.TabIndex = 59;
             this.btnBransPaneli.Text = "Branş Paneli";
             this.btnBransPaneli.UseVisualStyleBackColor = true;
+            this.btnBransPaneli.Click += new System.EventHandler(this.btnBransPaneli_Click);
             // 
             // btnDoktorPaneli
             // 
@@ -400,6 +405,7 @@
             this.btnDoktorPaneli.TabIndex = 58;
             this.btnDoktorPaneli.Text = "Doktor Paneli";
             this.btnDoktorPaneli.UseVisualStyleBackColor = true;
+            this.btnDoktorPaneli.Click += new System.EventHandler(this.btnDoktorPaneli_Click);
             // 
             // FrmSekreterDetay
             // 
@@ -445,7 +451,6 @@
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox txtBoxDoktor;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
@@ -468,5 +473,6 @@
         private System.Windows.Forms.Button btnHastaPaneli;
         private System.Windows.Forms.Button btnBransPaneli;
         private System.Windows.Forms.Button btnDoktorPaneli;
+        private System.Windows.Forms.ComboBox txtBoxDoktor;
     }
 }
